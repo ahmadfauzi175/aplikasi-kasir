@@ -95,7 +95,7 @@
                                     @endcan
                                     <a href="{{ route('penjualans.show', $penjualan->penjualan_id) }}" 
                                         class="btn btn-warning btn-sm shadow-sm px-3">
-                                        <i class="fas fa-eye text-dark"></i> <span class="text-white fw-normal ms-1">Detail</span>
+                                        <i class="fas fa-eye text-dark"></i> <span class="text-white fw-normal ms-1">Struk</span>
                                      </a>
                                 </div>
                             </td>

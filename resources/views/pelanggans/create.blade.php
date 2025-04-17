@@ -32,7 +32,7 @@
 
             <div class="mb-4">
                 <label for="nomor_telepon" class="form-label fw-semibold">Nomor Telepon</label>
-                <input type="text" name="nomor_telepon" class="form-control shadow-sm border-0 rounded-3" id="nomor_telepon" value="{{ old('nomor_telepon') }}" placeholder="Masukkan Nomor Telepon" required>
+                <input type="number" name="nomor_telepon" class="form-control shadow-sm border-0 rounded-3" id="nomor_telepon" value="{{ old('nomor_telepon') }}" placeholder="Masukkan Nomor Telepon" required>
             </div>
 
             <div class="text-center">

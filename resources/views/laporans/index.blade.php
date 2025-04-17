@@ -29,8 +29,8 @@
                     <th>Pelanggan</th>
                     <th>Produk</th>
                     <th>Metode Pembayaran</th>
-                    <th>Status</th> <!-- Status pindah ke sebelum Total Bayar -->
-                    <th>Total Bayar</th> <!-- Total Bayar pindah ke setelah Status -->
+                    <th>Status</th>
+                    <th>Total Bayar</th>
                 </tr>
             </thead>
             <tbody>
@@ -100,11 +100,20 @@
 
 <style> 
     @media print {
-        .dropdown, .btn-primary { 
-            display: none !important; /* Sembunyikan filter dan tombol print saat mencetak */
+        .dropdown, .btn-primary, 
+        .sidebar,      /* jika sidebar punya class sidebar */
+        aside,         /* jika sidebar pakai tag aside */
+        nav,           /* jika sidebar pakai nav */
+        .logo,
+        .search,
+        .menu,         /* kalau pakai class menu */
+        .navbar,
+        .left-panel {  /* tambahan jika struktur layout berbeda */
+            display: none !important;
         }
+
         table {
-            width: 100%; /* Pastikan tabel penuh saat dicetak */
+            width: 100%;
         }
     }
 </style>
